@@ -37,6 +37,7 @@ class Home extends React.Component {
                 id={movie.id}
                 year={movie.year}
                 title={movie.title}
+                title_long={movie.title_long}
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
                 genres={movie.genres}
