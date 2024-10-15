@@ -47,3 +47,8 @@
     margin-right: 10px;
     font-size: 14px;
 }
+
+.movie .movie__rating {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
