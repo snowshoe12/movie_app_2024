@@ -40,9 +40,11 @@ class Home extends React.Component {
                 title_long={movie.title_long}
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
+                poster_big={movie.large_cover_image}
                 genres={movie.genres}
                 rating={movie.rating}
                 yt_code={movie.yt_trailer_code}
+                runtime={movie.runtime}
               />
             ))}
           </div>

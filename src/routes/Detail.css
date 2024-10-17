@@ -1,0 +1,96 @@
+.detail__container {
+    display: flex;
+    align-items: flex-start; /* Align content to the top */
+    gap: 20px; /* Space between poster and content */
+    margin-top: 20px; /* Add top margin */
+    margin-left: 20px; /* Add left margin */
+    margin-right: 20px; /* Add right margin */
+  }
+  
+  .movie__poster_container {
+    position: relative;
+    width: 25%; /* Make poster take up 1/4 of the width */
+  }
+  
+  .movie__poster {
+    width: 100%; /* Ensure the poster fits its container */
+    display: block;
+  }
+  
+  .movie__rating_poster {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+  }
+  
+  .movie__content {
+    flex: 1; /* Take up the remaining space next to the poster */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .movie__summary {
+    margin-bottom: 20px;
+    line-height: 1.6; /* Improves readability */
+  }
+  
+  .trailer__title {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .movie__yt_code {
+    width: 100%;
+    height: auto;
+    max-height: 100%; /* Keep the video height similar to the poster */
+    aspect-ratio: 16 / 9; /* Maintain the 16:9 aspect ratio */
+    max-width: calc(25% * 16 / 9); /* Ensure the video width stays proportional to poster height */
+    margin-bottom: 10px;
+  }  
+
+  .movie__info_detail {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .movie__rating_sub {
+    font-weight: bold;
+  }
+  
+  .movie__separator {
+    margin: 0 8px;
+    color: #888;
+  }
+  
+  .movie__genres_sub {
+    font-style: italic;
+  }
+  
+  
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .detail__container {
+      flex-direction: column; /* Stack poster and content vertically */
+      align-items: center;
+    }
+  
+    .movie__poster_container,
+    .movie__content {
+      width: 100%; /* Allow full width for poster and content on smaller screens */
+    }
+  
+    .movie__yt_code {
+      width: 100%;
+      height: auto;
+    }
+  }
+  

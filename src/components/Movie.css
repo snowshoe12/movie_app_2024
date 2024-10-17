@@ -52,3 +52,8 @@
     margin-top: 10px;
     margin-bottom: 0;
 }
+
+.summary__null {
+    font-weight: bold; /* Makes the "updates" part stand out, if desired */
+  }
+  
