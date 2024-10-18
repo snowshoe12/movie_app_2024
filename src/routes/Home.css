@@ -1,29 +1,42 @@
 .container {
-    height: 100%;
     display: flex;
-    justify-content: center;
-}
-
-.loader {
+    flex-direction: column;  /* Stack children vertically */
+    min-height: 100vh;      /* Ensure the container takes full viewport height */
+    justify-content: space-between; /* Space out children */
+    padding: 0 20px; /* Add some horizontal padding */
+  }
+  
+  .loader {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 300;
-}
- .movies {
+  }
+  
+  .movies {
     display: grid;
     grid-template-columns: repeat(2, minmax(400px, 1fr));
     grid-gap: 100px;
-    padding: 50px;
-    width: 80%;
-    padding-top: 70px;
-}
-
-@media screen and (max-width: 1090px) {
+    padding: 50px 0; /* Keep vertical padding but remove horizontal padding */
+    width: 100%; /* Use full width of the container */
+    max-width: 1200px; /* Set a maximum width for better layout */
+    margin: 0 auto; /* Center the grid within the container */
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;  /* Centers pagination horizontally */
+    align-items: center;
+    margin-top: 20px;         /* Adds space between movies and pagination */
+    margin-bottom: 20px;      /* Adds space at the bottom */
+  }
+  
+  @media screen and (max-width: 1090px) {
     .movies {
-        grid-template-columns: 1fr;
-        width: 100%;
+      grid-template-columns: 1fr; /* Stack movies in a single column on smaller screens */
+      width: 100%; /* Full width */
     }
-}
+  }
+  

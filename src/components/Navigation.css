@@ -1,89 +1,89 @@
 /* Sticky positioning on the entire .nav container */
 .nav {
-    position: -webkit-sticky; /* Safari support */
-    position: sticky;
-    top: 0;
-    background-color: #f3f3f3;
-    border: 1px solid #e7e7e7;
-    z-index: 1000; /* Ensures the navbar stays on top */
-    display: flex;  /* Flexbox for horizontal alignment */
+  position: -webkit-sticky; /* Safari support */
+  position: sticky;
+  top: 0;
+  background-color: #f3f3f3;
+  border: 1px solid #e7e7e7;
+  z-index: 1000; /* Ensures the navbar stays on top */
+  display: flex; /* Flexbox for horizontal alignment */
   justify-content: space-between; /* Spreads nav links and search bar to opposite sides */
   align-items: center; /* Aligns items vertically in the middle */
   padding: 0 10px; /* Adds padding to the left and right */
-  }
-  
-  .nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: flex; /* Makes nav items align horizontally */
-    background-color: #f3f3f3;
-  }
-  
-  .nav li {
-    float: left;
-  }
-  
-  .nav li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .nav li a:hover:not(.active) {
-    background-color: #ddd;
-  }
-  
-  .nav li a.active {
-    color: white;
-    background-color: rgb(160, 235, 135);
-  }
+}
 
-  /* Search bar styles */
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex; /* Makes nav items align horizontally */
+  background-color: #f3f3f3;
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.nav li a.active {
+  color: white;
+  background-color: rgb(160, 235, 135);
+}
+
+/* Search bar styles */
 .nav-search {
-    margin-right: 10px; /* Space between the search bar and the right end */
-  }
-  
-  .nav-search form {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-search input {
-    padding: 6px 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 8px;
-  }
-  
-  .nav-search button {
-    padding: 6px 10px;
-    background-color: rgb(160, 235, 135);
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    display: flex; /* Ensures the icon is centered inside the button */
-    align-items: center;
-    justify-content: center;
-  }
+  margin-right: 10px; /* Space between the search bar and the right end */
+}
 
-  .nav-search button svg {
-    width: 16px;
-    height: 16px;
-    stroke: white; /* Makes the icon white */
-  }
-  
-  .nav-search button:hover {
-    background-color: #ddd;
-  }
-  
-  /* Body and HTML adjustments for smooth scrolling */
-  body, html {
-    margin: 0;
-    padding: 0;
-  }
-  
+.nav-search form {
+  display: flex;
+  align-items: center;
+}
+
+.nav-search input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.nav-search button {
+  padding: 6px 10px;
+  background-color: rgb(160, 235, 135);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex; /* Ensures the icon is centered inside the button */
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-search button svg {
+  width: 16px;
+  height: 16px;
+  stroke: white; /* Makes the icon white */
+}
+
+.nav-search button:hover {
+  background-color: #ddd;
+}
+
+/* Body and HTML adjustments for smooth scrolling */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
