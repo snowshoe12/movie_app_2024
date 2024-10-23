@@ -10,6 +10,8 @@
   justify-content: space-between; /* Spreads nav links and search bar to opposite sides */
   align-items: center; /* Aligns items vertically in the middle */
   padding: 0 10px; /* Adds padding to the left and right */
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25), 0 8px 16px -8px rgba(0, 0, 0, 0.3),
+    0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
 .nav ul {
@@ -60,7 +62,7 @@
 }
 
 .nav-search button {
-  padding: 6px 10px;
+  padding: 6px 8px;
   background-color: rgb(160, 235, 135);
   color: white;
   border: none;

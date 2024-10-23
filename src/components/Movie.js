@@ -74,9 +74,9 @@ Movie.propTypes = {
   summary: PropTypes.string.isRequired,
   poster: PropTypes.string.isRequired,
   genres: PropTypes.arrayOf(PropTypes.string).isRequired,
-  rating: PropTypes.number.isRequired,
-  yt_code: PropTypes.string.isRequired,     // Add this for validation
-  runtime: PropTypes.number.isRequired,     // Add this for validation
+  rating: PropTypes.number,
+  yt_code: PropTypes.string.isRequired,
+  runtime: PropTypes.number.isRequired,
 };
 
 export default Movie;
